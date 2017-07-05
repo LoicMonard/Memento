@@ -1,7 +1,7 @@
 <template>
   <div class="items">
     <div id="item" v-for="item in items">
-      <img :src="'https://maps.googleapis.com/maps/api/streetview?size=600x400&location='+item.address+'&fov=120&heading=0&pitch=10&key=AIzaSyCUEEzTpu8BzuQ2te4yY0gBzvQ6ax7w_wA'">
+      <img :src="'https://maps.googleapis.com/maps/api/streetview?size=300x400&location='+item.address+'&fov=120&heading=0&pitch=10&key=AIzaSyCUEEzTpu8BzuQ2te4yY0gBzvQ6ax7w_wA'">
     </div>
   </div>
 </template>

@@ -2,7 +2,7 @@
   <div>
     <Navbar class="navbar"></Navbar>
     <Map class="map"></Map>
-    <Items></Items>
+    <Items class="items"></Items>
   </div>
 </template>
 
@@ -37,7 +37,8 @@ export default {
 body {
   margin: 0px;
   padding: 0px;
-  background : grey;
+  overflow: hidden;
+  background : #Ffcccc;
 }
 
 * {
@@ -53,5 +54,24 @@ body {
 .map {
   margin-top: 8vh;
   z-index: 1;
+}
+
+.items {
+  width: 100%;
+}
+
+@media screen and (min-width: 321px) {
+  .map {
+    width: 55%;
+    height: 100vh;
+    float: left;
+  }
+
+  .items {
+    margin-top: 8vh;
+    width: 45%;
+    height: 100%;
+    float: left;
+  }
 }
 </style>
