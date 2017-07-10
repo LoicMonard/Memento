@@ -1,6 +1,6 @@
 <template>
   <div class="navbar">
-    <span id="title">Hey</span>
+    <span id="title">memento</span>
     <div class="more">
       <span id="more_logo" @click="toggleMenu()"><img src="./assets/more_white.png" alt="More logo"></span>
       <ul class="more_menu" v-if="menuActive">

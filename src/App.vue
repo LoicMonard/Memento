@@ -32,6 +32,8 @@ export default {
   src: url('./fonts/montserrat-light.woff');
   font-family: 'montserrat-regular';
   src: url('./fonts/montserrat-regular.woff');
+  font-family: 'shorelines';
+  src: url('./fonts/Shorelines Script Bold.otf');
 }
 
 body {
