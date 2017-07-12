@@ -1,13 +1,13 @@
 <template>
   <div>
     <Navbar class="navbar"></Navbar>
-    <Map class="map"></Map>
-    <Items class="items"></Items>
+    <!--<Map class="map"></Map>-->
+    <!--<Items class="items"></Items>-->
   </div>
 </template>
 
 <script>
-import Navbar from './navbar.vue'
+import Navbar from './navbar2.vue'
 import Map from './map.vue'
 import Items from './items.vue'
 
@@ -26,21 +26,21 @@ export default {
 
 <style>
 @font-face {
-  font-family: 'montserrat-extralight';
-  src: url('./fonts/montserrat-ultra-light.woff');
   font-family: 'montserrat-light';
   src: url('./fonts/montserrat-light.woff');
   font-family: 'montserrat-regular';
   src: url('./fonts/montserrat-regular.woff');
   font-family: 'shorelines';
   src: url('./fonts/Shorelines Script Bold.otf');
+  font-family: 'montserrat-extralight';
+  src: url('./fonts/montserrat-ultra-light.woff');
 }
 
 body {
   margin: 0px;
   padding: 0px;
   overflow: hidden;
-  background : #Ffcccc;
+  background : #f7f7f7;
 }
 
 * {
@@ -51,6 +51,7 @@ body {
   position: absolute;
   top: 0;
   z-index: 2;
+  font-family: 'montserrat-extralight';
 }
 
 .map {
