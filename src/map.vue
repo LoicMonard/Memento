@@ -76,6 +76,10 @@ export default {
           this.map.setZoom(14);
         });
 
+        this.map.addListener('click', function() {
+          infoWindow.close();
+        });
+
         // console.log("Id : "+id+", title : "+ title + ", address : "+address+", point : "+point);
       });
       

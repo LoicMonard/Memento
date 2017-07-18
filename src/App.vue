@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar class="navbar"></Navbar>
-    <!--<Map class="map"></Map>-->
+    <Map class="map"></Map>
     <!--<Items class="items"></Items>-->
   </div>
 </template>
@@ -55,7 +55,7 @@ body {
 }
 
 .map {
-  margin-top: 8vh;
+  margin-top: 64px;
   z-index: 1;
 }
 
@@ -66,7 +66,7 @@ body {
 @media screen and (min-width: 321px) {
   .map {
     width: 55%;
-    height: 100vh;
+    height: calc(100vh - 64px);
     float: left;
   }
 
