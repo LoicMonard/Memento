@@ -1,6 +1,10 @@
 <template>
   <div class="navbar-component">
-    <span id="brand">GOLOB</span>
+    <div class="leftNavbar">
+      <span id="brand">GOLOB</span>
+      <span id="searchButton" @click="toggleSearch"><img src="./images/search_black.png"alt="search logo"></span>
+      <input type="text" id="searchField">
+    </div>
 
     <nav class="navigation">
       <span id="option">OPTION</span>
@@ -31,6 +35,10 @@ export default {
   methods: {
     toggleMenu() {
       this.menuActive = !this.menuActive;
+    },
+    toggleSearch() {
+      document.getElementById('searchField').style.width = '100px';
+      document.getElementById('searchField').focus();
     }
   }
 }

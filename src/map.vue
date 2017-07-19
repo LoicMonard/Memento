@@ -47,19 +47,19 @@ export default {
         var id = marker.id;
         var title = marker.title;
         var address = marker.address;
+        var image = marker.image;
         var point = new google.maps.LatLng(
           parseFloat(marker.latitude),
           parseFloat(marker.longitude)
         );
 
         var infowincontent = document.createElement('div');
-        var strong = document.createElement('strong');
-        strong.textContent = title;
-        infowincontent.appendChild(strong);
-        infowincontent.appendChild(document.createElement('br'));
         var text = document.createElement('text');
         text.textContent = address
         infowincontent.appendChild(text);
+
+        var infowincontente = '<img src="https://maps.googleapis.com/maps/api/streetview?size=600x300&location='+address+'&fov=120&heading=0&pitch=10&key=AIzaSyCUEEzTpu8BzuQ2te4yY0gBzvQ6ax7w_wA">';
+        console.log(infowincontente);
 
         var marker = new google.maps.Marker({
           position: point,
@@ -67,7 +67,7 @@ export default {
         });
 
         marker.addListener('click', function() {
-          infoWindow.setContent(infowincontent);
+          infoWindow.setContent(infowincontente);
           infoWindow.open(this.map, marker);
         });
 
