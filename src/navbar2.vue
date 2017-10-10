@@ -3,7 +3,7 @@
     <div class="leftNavbar">
       <span id="brand">GOLOB</span>
       <span id="searchButton" @click="toggleSearch"><img src="./images/search_black.png"alt="search logo"></span>
-      <input type="text" id="searchField">
+      <input type="text" id="searchField" v-on:focusout="unFocus">
     </div>
 
     <nav class="navigation">
@@ -39,6 +39,9 @@ export default {
     toggleSearch() {
       document.getElementById('searchField').style.width = '100px';
       document.getElementById('searchField').focus();
+    },
+    unFocus() {
+      document.getElementById('searchField').style.width = '0px';
     }
   }
 }
